@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="intro__container">
+        <div class="text__container">
+          <h1 class="primary__heading">Learn to code by watching others</h1>
+          <p class="intro__info">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="form__container">
+          <div class="trial">
+            <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
+          </div>
+          <form class="form">
+            <div class="input__container">
+              <label for="name" class="visually-hidden"></label>
+              <input type="text" id="name" placeholder="First Name" />
+              <p class="error__msg">First Name cannot be empty</p>
+            </div>
+
+            <div class="input__container">
+              <label for="surname" class="visually-hidden"></label>
+              <input type="text" id="surname" placeholder="Last Name" />
+              <p class="error__msg">Last Name cannot be empty</p>
+            </div>
+
+            <div class="input__container">
+              <label for="email" class="visually-hidden"></label>
+              <input type="email" id="email" placeholder="Email Address" />
+              <p class="error__msg">Email Address cannot be empty</p>
+            </div>
+
+            <div class="input__container">
+              <label for="password" class="visually-hidden"></label>
+              <input type="password" id="password" placeholder="Password" />
+              <p class="error__msg">Password cannot be empty</p>
+              <div class="strength__measure"></div>
+              <p class="password__txt">Your password is too weak</p>
+              <button
+                type="button"
+                class="passwordBtn"
+                aria-label="show/hide password"
+              >
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-eye-slash hidden"></i>
+              </button>
+            </div>
+            <button type="submit" class="submitBtn">
+              Claim your free trial
+            </button>
+            <p class="terms">
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </form>
+
+          <div class="claimed__container">
+            <p class="claimed__thanks">Thank you!</p>
+            <p class="claimed__txt">
+              We have recieved your infomation. Check your email for further
+              instructions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/oliwiakramm">Hoshiko</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
