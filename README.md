@@ -38,7 +38,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Hoshiko](https://www.frontendmentor.io/profile/oliwiakramm")
+- Frontend Mentor - [@Hoshiko](https://www.frontendmentor.io/profile/oliwiakramm)
 
 ## Acknowledgments
 
