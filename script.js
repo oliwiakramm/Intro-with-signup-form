@@ -34,8 +34,7 @@ formEl.addEventListener("submit", function (e) {
   validation(emailInput, emailRegExp);
 
   const inputContainers = formEl.querySelectorAll(".input__container");
-  const emptyResult = [...inputContainers].every(containsEmtpy);
-  console.log(emptyResult);
+  const emptyResult = [...inputContainers].every(containsEmpty);
 
   if (emptyResult && !strengthBar.classList.contains("weak")) {
     formContainer.classList.add("claimed");
@@ -121,6 +120,6 @@ passwordInput.addEventListener("input", function () {
   }
 });
 
-function containsEmtpy(element) {
+function containsEmpty(element) {
   return !element.classList.contains("empty");
 }
